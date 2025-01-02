@@ -1,11 +1,47 @@
-.style-title{
-    font-size: 26px !important;
-    font-weight: bold;
-    margin-top:50px;
-    margin-left: 12%;
-    margin-bottom: 1px;
-  }
+.div-employe {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
 
+  }
+  
+  .style-title {
+    justify-content: space-between;
+  
+  }
+  
+  .style-title h2 {
+    margin-bottom: 16px;
+    margin-left: 12%;
+  }
+  
+.icon-container {
+    display: flex !important;
+    margin-top: 0; 
+    margin-left: 12%;
+  } 
+  
+  .style-title > div {
+    
+    gap: 8px; /* Espacement entre les icônes */
+  }
+  
+  @media (max-width: 768px) {
+    .style-title {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  
+    .style-title h2 {
+      font-size: 1.2rem; 
+    }
+  
+    .style-title > div {
+      justify-content: space-between; 
+      width: 100%; 
+    }
+  }
+  
   .tableau-position{
     margin-left: 12%;
     margin-top: 50px;
