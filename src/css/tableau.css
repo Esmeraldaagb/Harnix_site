@@ -1,0 +1,66 @@
+.style-title{
+    font-size: 26px !important;
+    font-weight: bold;
+    margin-top:50px;
+    margin-left: 12%;
+    margin-bottom: 1px;
+  }
+
+  .tableau-position{
+    margin-left: 12%;
+    margin-top: 50px;
+  }
+
+  
+  /* Règles globales pour le tableau */
+.table-row {
+  background-color: red;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 30px !important;
+    padding: 10px;
+    width: 100%;
+  }
+ 
+  
+  .table-row th {
+    padding: 10px 20px; 
+    
+  }
+
+  .table-row:hover {
+    background-color: black; 
+   
+  }
+
+  .p{
+    margin-left: 12%;
+    margin-top: 1px !important;
+    font-size: 12px;
+  }
+
+  .icon{
+    flex-direction: row;
+    margin-left: 20%;
+  }
+
+  .parent-container {
+    display: flex;
+    justify-content: flex-end; /* Aligne à droite */
+    align-items: center; /* Centre verticalement si nécessaire */
+  }
+  
+  .icon-right {
+    display: flex;
+    align-items: center; /* Centre le contenu interne */
+  }
+  
+  .table-row a {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .table-row a:hover {
+    color: darkblue;
+    text-decoration: underline;
+  }
+  
