@@ -4,7 +4,11 @@
     "baseUrl": "src",
     "paths": {
       "*": ["typings/*"],
-      "composants/*": ["composants/*"]
+      "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"],
+      "utils/*": ["src/utils/*"],
+      "services/*": ["src/services/*"],
+      "hooks/*": ["src/hooks/*"],
 
     },
     "resolveJsonModule": true,
