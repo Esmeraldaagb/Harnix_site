@@ -32,24 +32,32 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <div className="bg-cover bg-center " style={{ backgroundImage: `url(${wave})` }}>
-        <header className="bg-zinc-900 h-20 ">
+        <header className="bg-zinc-900 h-20 p-4">
         
-          <nav className="flex items-center justify-end w-full">
+          <nav className="flex items-center justify-between w-full">
 
-            <img width={35}  height={35} src={logo} alt="Logo" className='ml-8 mt-2'/>
+          <div className='flex items-center gap-1'>
+             <img width={35}  height={35} src={logo} alt="Logo" />
 
-          <h2 className="font-serif tracking-wide text-white ml-4 uppercase text-2xl">HARNIX</h2>
+              <h2 className="font-serif tracking-wide text-white ml-4 uppercase text-2xl">HARNIX</h2>
+          </div>
 
-              <ul className="flex space-x-4 flex-row justify-end ml-auto"> 
+          <div className='flex items-center justify-center md:justify-between'>
+              <ul className="md:flex hidden space-x-4 flex-row"> 
                 {renderNavItems()}
               </ul>
 
-                <Button 
-                  label="Investir" 
-                  width='600' 
-                  height='300' 
-                  className='p-3 text-sm font-normal font-sans bg-white rounded-md text-center font-semibold mt-4 mr-6'
-                />
+              <Button 
+                label="Investir" 
+                width='600' 
+                height='300' 
+                className='p-3 text-sm font-normal font-sans bg-white rounded-md text-center font-semibold'
+              />
+         </div>
+
+         
+
+             
           </nav>
 
 

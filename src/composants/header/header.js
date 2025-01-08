@@ -22,11 +22,13 @@ const Header = () => {
             react_1.default.createElement("a", { href: item.path, className: "text-sm font-normal font-sans text-white flex justify-center mt-6 mr-6" }, item.title))));
     };
     return (react_1.default.createElement("div", { className: "bg-cover bg-center ", style: { backgroundImage: `url(${wave_svg_1.default})` } },
-        react_1.default.createElement("header", { className: "bg-zinc-900 h-20 " },
-            react_1.default.createElement("nav", { className: "flex items-center justify-end w-full" },
-                react_1.default.createElement("img", { width: 35, height: 35, src: logo1_png_1.default, alt: "Logo", className: 'ml-8 mt-2' }),
-                react_1.default.createElement("h2", { className: "font-serif tracking-wide text-white ml-4 uppercase text-2xl" }, "HARNIX"),
-                react_1.default.createElement("ul", { className: "flex space-x-4 flex-row justify-end ml-auto" }, renderNavItems()),
-                react_1.default.createElement(button_1.default, { label: "Investir", width: '600', height: '300', className: 'p-3 text-sm font-normal font-sans bg-white rounded-md text-center font-semibold mt-4 mr-6' })))));
+        react_1.default.createElement("header", { className: "bg-zinc-900 h-20 p-4" },
+            react_1.default.createElement("nav", { className: "flex items-center justify-between w-full" },
+                react_1.default.createElement("div", { className: 'flex items-center gap-1' },
+                    react_1.default.createElement("img", { width: 35, height: 35, src: logo1_png_1.default, alt: "Logo" }),
+                    react_1.default.createElement("h2", { className: "font-serif tracking-wide text-white ml-4 uppercase text-2xl" }, "HARNIX")),
+                react_1.default.createElement("div", { className: 'flex items-center justify-center md:justify-between' },
+                    react_1.default.createElement("ul", { className: "md:flex hidden space-x-4 flex-row" }, renderNavItems()),
+                    react_1.default.createElement(button_1.default, { label: "Investir", width: '600', height: '300', className: 'p-3 text-sm font-normal font-sans bg-white rounded-md text-center font-semibold' }))))));
 };
 exports.default = Header;
