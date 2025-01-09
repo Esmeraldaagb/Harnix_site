@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-wave': "url('../assets/wave.svg')", 
+        'custom-background': "url('../assets/wave.svg')",
+        'custom-image': "url('../assets/caroussel1.png')", 
+        'custom-image': "url('../assets/caroussel2.png')", 
+
       },
     },
   },

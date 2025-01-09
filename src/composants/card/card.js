@@ -4,13 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
-const Card = ({ image, title, description, buttonLabel, onButtonClick }) => {
-    return (react_1.default.createElement("div", { className: "max-w-sm rounded overflow-hidden shadow-lg bg-white" },
-        react_1.default.createElement("img", { className: "w-full h-48 object-cover", src: image, alt: title }),
-        react_1.default.createElement("div", { className: "px-6 py-4" },
-            react_1.default.createElement("h2", { className: "text-xl font-semibold mb-2" }, title),
-            react_1.default.createElement("p", { className: "text-gray-700 text-base" }, description)),
-        react_1.default.createElement("div", { className: "px-6 py-4" },
-            react_1.default.createElement("button", { onClick: onButtonClick, className: "bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300" }, buttonLabel))));
+const Card = ({ image, className, title, description, buttonLabel, imageClassName, onButtonClick }) => {
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement("img", { src: image, className: `object-cover rounded-lg ${imageClassName}` }),
+        title && react_1.default.createElement("h3", { className: "text-lg font-semibold" }, title),
+        description && react_1.default.createElement("p", { className: "text-sm" }, description),
+        buttonLabel && (react_1.default.createElement("button", { onClick: onButtonClick, className: "mt-2 bg-blue-500 text-white rounded px-4 py-2" }, buttonLabel))));
 };
 exports.default = Card;
