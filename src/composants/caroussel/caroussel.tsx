@@ -43,7 +43,7 @@ export default function Caroussel() {
           <Card 
             image={caroussel1} 
             className='w-full' 
-            imageClassName='w-[80%] h-64 m-[8%] rounded-2xl' 
+            imageClassName='w-[80%] h-54 m-[10%] rounded-2xl' 
           />
         </SwiperSlide>
 
@@ -51,7 +51,7 @@ export default function Caroussel() {
           <Card 
             image={caroussel2} 
             className='w-full' 
-            imageClassName='w-[80%] h-64 m-[8%] rounded-2xl' 
+            imageClassName='w-[80%] h-64 m-[10%] rounded-2xl' 
           />
         </SwiperSlide>
 
@@ -59,7 +59,7 @@ export default function Caroussel() {
           <Card 
             image={caroussel3} 
             className='w-full' 
-            imageClassName='w-[80%] h-64 m-[8%] rounded-2xl'
+            imageClassName='w-[80%] h-[20%] m-[8%] rounded-[10%]'
           />
         </SwiperSlide>
       </Swiper>
